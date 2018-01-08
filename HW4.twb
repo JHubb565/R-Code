@@ -1,0 +1,3003 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10100.17.0207.2140                               -->
+<workbook source-build='10.1.5 (10100.17.0207.2140)' source-platform='win' version='10.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='2016' inline='true' name='federated.1cktmbm0aaholu16i41ai0xwuixz' version='10.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2016' name='textscan.1yqxwun1opbeab1059nqp0bka6ht'>
+            <connection class='textscan' directory='C:/Users/Justin Hubbard/Documents/Purdue/Purdue- Senior/MGMT490/HW4' filename='2016.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1yqxwun1opbeab1059nqp0bka6ht' name='2016.csv' table='[2016#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='integer' name='Happiness_Rank' ordinal='2' />
+            <column datatype='real' name='Happiness_Score' ordinal='3' />
+            <column datatype='real' name='Economy_GDP_capita' ordinal='4' />
+            <column datatype='real' name='Family' ordinal='5' />
+            <column datatype='real' name='Health_Life_Expectancy' ordinal='6' />
+            <column datatype='real' name='Freedom' ordinal='7' />
+            <column datatype='real' name='Trust_Government_Corruption' ordinal='8' />
+            <column datatype='real' name='Generosity' ordinal='9' />
+            <column datatype='real' name='Dystopia_Residual' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Happiness_Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Happiness_Rank]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Happiness_Rank</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Happiness_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Happiness_Score]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Happiness_Score</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Economy_GDP_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Economy_GDP_capita]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Economy_GDP_capita</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Family</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Family]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Family</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Health_Life_Expectancy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Health_Life_Expectancy]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Health_Life_Expectancy</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freedom</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Freedom]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Freedom</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Trust_Government_Corruption</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Trust_Government_Corruption]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Trust_Government_Corruption</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Generosity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Generosity]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Generosity</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dystopia_Residual</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dystopia_Residual]</local-name>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias>Dystopia_Residual</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2016.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Dystopia Residual' datatype='real' name='[Dystopia_Residual]' role='measure' type='quantitative' />
+      <column caption='Economy GDP capita' datatype='real' name='[Economy_GDP_capita]' role='measure' type='quantitative' />
+      <column caption='Happiness Rank' datatype='integer' name='[Happiness_Rank]' role='measure' type='quantitative' />
+      <column caption='Happiness Score' datatype='real' name='[Happiness_Score]' role='measure' type='quantitative' />
+      <column caption='Health Life Expectancy' datatype='real' name='[Health_Life_Expectancy]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Trust Government Corruption' datatype='real' name='[Trust_Government_Corruption]' role='measure' type='quantitative' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.374101' measure-ordering='alphabetic' measure-percentage='0.625899' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;South Sudan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Congo (Kinshasa)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Venezuela&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ivory Coast&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Palestinian Territories&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Somaliland Region&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Botswana&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tanzania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Macedonia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bolivia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Czech Republic&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Taiwan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kyrgyzstan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Laos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Myanmar&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Yemen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tajikistan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Comoros&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Moldova&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;North Cyprus&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Slovakia&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hong Kong&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Syria&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Congo (Brazzaville)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kosovo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Map of Happiness'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2016' name='federated.1cktmbm0aaholu16i41ai0xwuixz' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1cktmbm0aaholu16i41ai0xwuixz'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Happiness Score' datatype='real' name='[Happiness_Score]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Happiness_Score]' derivation='Sum' name='[sum:Happiness_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]' />
+              <lod column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]' />
+              <geometry column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1cktmbm0aaholu16i41ai0xwuixz].[Latitude (generated)]</rows>
+        <cols>[federated.1cktmbm0aaholu16i41ai0xwuixz].[Longitude (generated)]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Q4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2016' name='federated.1cktmbm0aaholu16i41ai0xwuixz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cktmbm0aaholu16i41ai0xwuixz'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Happiness Rank' datatype='integer' name='[Happiness_Rank]' role='measure' type='quantitative' />
+            <column caption='Health Life Expectancy' datatype='real' name='[Health_Life_Expectancy]' role='measure' type='quantitative' />
+            <column caption='Trust Government Corruption' datatype='real' name='[Trust_Government_Corruption]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Happiness_Rank]' derivation='Sum' name='[sum:Happiness_Rank:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Health_Life_Expectancy]' derivation='Sum' name='[sum:Health_Life_Expectancy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Trust_Government_Corruption]' derivation='Sum' name='[sum:Trust_Government_Corruption:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Denmark&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Finland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Iceland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Norway&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Switzerland&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]' />
+              <size column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Rank:qk]' />
+              <text column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]' />
+              <lod column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Health_Life_Expectancy:qk]</rows>
+        <cols>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Trust_Government_Corruption:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Top 30 Countries Happiness'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='2016' name='federated.1cktmbm0aaholu16i41ai0xwuixz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cktmbm0aaholu16i41ai0xwuixz'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Happiness Score' datatype='real' name='[Happiness_Score]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Happiness_Score]' derivation='Sum' name='[sum:Happiness_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Argentina&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Australia&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Austria&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Belgium&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Brazil&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Chile&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Costa Rica&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Czech Republic&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Denmark&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Finland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Iceland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Ireland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Israel&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Luxembourg&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Malta&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Netherlands&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;New Zealand&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Norway&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Panama&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Puerto Rico&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Singapore&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Sweden&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Switzerland&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;United States&quot;' />
+              <groupfilter function='member' level='[none:Country:nk]' member='&quot;Uruguay&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='computed' column='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]' direction='DESC' using='[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]' />
+          <slices>
+            <column>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]' value='64' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</rows>
+        <cols>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</cols>
+        <mark-labels>
+          <mark-label id='127' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Malta&quot;</value>
+                <value>6.4879999999999995</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='128' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Uruguay&quot;</value>
+                <value>6.5449999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='129' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United Arab Emirates&quot;</value>
+                <value>6.5730000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='130' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Czech Republic&quot;</value>
+                <value>6.5960000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='131' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Argentina&quot;</value>
+                <value>6.6500000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='132' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Panama&quot;</value>
+                <value>6.7009999999999996</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='133' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Chile&quot;</value>
+                <value>6.7050000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='134' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United Kingdom&quot;</value>
+                <value>6.7249999999999996</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='135' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Singapore&quot;</value>
+                <value>6.7389999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='136' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Mexico&quot;</value>
+                <value>6.7780000000000005</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='137' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Luxembourg&quot;</value>
+                <value>6.8710000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='138' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Ireland&quot;</value>
+                <value>6.907</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='139' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Belgium&quot;</value>
+                <value>6.9290000000000003</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='140' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Brazil&quot;</value>
+                <value>6.952</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='141' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Germany&quot;</value>
+                <value>6.9939999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='142' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Puerto Rico&quot;</value>
+                <value>7.0389999999999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='143' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Costa Rica&quot;</value>
+                <value>7.0869999999999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='144' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United States&quot;</value>
+                <value>7.1040000000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='145' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Austria&quot;</value>
+                <value>7.1189999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='146' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Israel&quot;</value>
+                <value>7.2670000000000003</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='147' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Sweden&quot;</value>
+                <value>7.2910000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='148' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Australia&quot;</value>
+                <value>7.3129999999999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='149' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New Zealand&quot;</value>
+                <value>7.3339999999999996</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='150' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Netherlands&quot;</value>
+                <value>7.3390000000000004</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='151' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Canada&quot;</value>
+                <value>7.4039999999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='152' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Finland&quot;</value>
+                <value>7.4130000000000003</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='153' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Norway&quot;</value>
+                <value>7.4980000000000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='154' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Iceland&quot;</value>
+                <value>7.5010000000000003</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='155' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Switzerland&quot;</value>
+                <value>7.5090000000000003</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='156' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Denmark&quot;</value>
+                <value>7.5259999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Map of Happiness'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Top 30 Countries Happiness'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Malta&quot;</value>
+                <value>6.4879999999999995</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Uruguay&quot;</value>
+                <value>6.5449999999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United Arab Emirates&quot;</value>
+                <value>6.5730000000000004</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Czech Republic&quot;</value>
+                <value>6.5960000000000001</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Argentina&quot;</value>
+                <value>6.6500000000000004</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Panama&quot;</value>
+                <value>6.7009999999999996</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Chile&quot;</value>
+                <value>6.7050000000000001</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United Kingdom&quot;</value>
+                <value>6.7249999999999996</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Singapore&quot;</value>
+                <value>6.7389999999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Mexico&quot;</value>
+                <value>6.7780000000000005</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Luxembourg&quot;</value>
+                <value>6.8710000000000004</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Ireland&quot;</value>
+                <value>6.907</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Belgium&quot;</value>
+                <value>6.9290000000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Brazil&quot;</value>
+                <value>6.952</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Germany&quot;</value>
+                <value>6.9939999999999998</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Puerto Rico&quot;</value>
+                <value>7.0389999999999997</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Costa Rica&quot;</value>
+                <value>7.0869999999999997</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United States&quot;</value>
+                <value>7.1040000000000001</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Austria&quot;</value>
+                <value>7.1189999999999998</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Israel&quot;</value>
+                <value>7.2670000000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Sweden&quot;</value>
+                <value>7.2910000000000004</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Australia&quot;</value>
+                <value>7.3129999999999997</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New Zealand&quot;</value>
+                <value>7.3339999999999996</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Netherlands&quot;</value>
+                <value>7.3390000000000004</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Canada&quot;</value>
+                <value>7.4039999999999999</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Finland&quot;</value>
+                <value>7.4130000000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Norway&quot;</value>
+                <value>7.4980000000000002</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Iceland&quot;</value>
+                <value>7.5010000000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Switzerland&quot;</value>
+                <value>7.5090000000000003</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+                  <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Score:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Denmark&quot;</value>
+                <value>7.5259999999999998</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Q4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1cktmbm0aaholu16i41ai0xwuixz].[sum:Happiness_Rank:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1cktmbm0aaholu16i41ai0xwuixz].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Map of Happiness' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Q4' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Top 30 Countries Happiness' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
