@@ -18,7 +18,7 @@ setwd("C:\\Users\\malan\\Dropbox\\_Purdue\\_Teaching\\DM\\6_Dimension Reduction"
 # X6 ="households"         : # of households in block
 # X7 ="latitude"           : center latitute of block
 # X8 ="longitude"          : center longitude of block
-myUrl <- "https://raw.githubusercontent.com/MatthewALanham/Datasets/master/1990CAHousingData.csv"
+# myUrl <- "https://raw.githubusercontent.com/MatthewALanham/Datasets/master/1990CAHousingData.csv"
 df <- read.table(file=myUrl, header=T, sep=",")
 str(df)
 head(df, n=2)
