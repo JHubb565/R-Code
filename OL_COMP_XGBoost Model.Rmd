@@ -1,0 +1,171 @@
+---
+title: "SF Expected Loss Model"
+author: "Justin Hubbard"
+date: "Apr 28,2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+```{r}
+library(Hmisc)
+library(rmarkdown)
+library(dplyr)
+library(xgboost)
+library(gbm)
+library(pROC)
+library(dummies)
+library(data.table)
+library(Matrix)
+library(pdp)
+library(scorecard)
+library(haven)
+library(sqldf)
+```
+
+Data Pull
+```{r}
+
+comb_OL<- read_sas("Z:\\SAS Data\\user\\jvontela\\Data\\ol_compliant_data.sas7bdat")
+comb_OL$MONTHENDDT <- as.Date(comb_OL$MONTHENDDT)
+comb_OL$year <- as.numeric(format(comb_OL$MONTHENDDT,'%Y'))
+comb_OL_mod <- comb_OL %>%
+               filter(year == 2017) 
+
+
+```
+
+User-defined Functions
+
+```{r}
+
+cap.floor<-function(data){x=ifelse(data<=quantile(data, c(.01),na.rm = T)
+                                   ,quantile(data, c(.01),na.rm = T)
+                                   ,ifelse(data>=quantile(data, c(.99),na.rm = T)
+                                           ,quantile(data, c(.99),na.rm = T),data))}
+
+
+data_fun<-function(x){
+  
+  x<- subset(x,select=-c(MONTHENDDT,CHANNELCD,INSTANCE,SSN,CUSTNBR
+        ,DEALNBR
+        ,DEALDT
+        ,FEE
+        ,CURRENT_BALANCE
+        ,COMPANY_FIRSTDT
+        ,PRODUCT_FIRSTDT
+        ,MONTH_END_DATE
+        ,LOAN_ORG_DATE
+        ,MODEL_SCORE
+        ,MODEL_TYPE
+        ,TRANDT
+        ,ACCT_TRANDT
+        ,DEF_DT
+        ,DEALNUM_OPEN_IN_180
+        ,PDL_DEALNUM_OPEN_IN_180
+        ,DEALNUM_DEF_IN_180
+        ,DEALNUM_DELINQ7_IN_180
+        ,LEADID,ONLINE_CHANNEL,LOAN_APP_PAYROLL
+        ,LOANACCOUNTINGSTATUSNAME
+        ,CUST_TOTAL_DELINQ_DAYS_IN_180
+        ,CUST_POSIT_DELINQ_DAYS_IN_180
+        ,CUST_DAYS_IN_DELINQ_STATUS180
+        ,CUST_TOTAL_DELINQ_DAYS_IN_365
+        ,CUST_POSIT_DELINQ_DAYS_IN_365
+        ,CUST_DAYS_IN_DELINQ_STATUS365
+        ,PRE_LOAN_DEAL_DT_LAST
+        ,LOAN_SNAP_DELINQ_DAYS,year,TRNTYPENAME))
+  
+  
+  x$random=runif(nrow(x),0,1)
+  x$LGDrandom=ifelse(x$LGD>x$random,1,0)
+  x$LGDmean=ifelse(x$LGD>mean(x$LGD),1,0)
+  
+  x_var=select(x,-c("LGD","LGDmean","LGDrandom"))
+  x_num=select_if(x_var,is.numeric)
+  x_num1=apply(x_num,2,cap.floor)
+  x_left=select(x,-one_of(colnames(x_num1)))
+  x_final=cbind(x_left,x_num1)
+
+dummy.data.frame(data.table(x_final), names=names(x_final)[which(lapply(x_final,class)%in%c("character","factor"))], sep=".",verbose=T)
+
+}
+
+comb_OL_modDUM <- data_fun(comb_OL_mod)
+trainDUM=split_df(comb_OL_modDUM,ratio=.7,seed=123)[[1]]
+testDUM=split_df(comb_OL_modDUM,ratio=.7,seed=123)[[2]]
+train=split_df(comb_OL_mod,ratio=.7,seed=123)[[1]]
+test=split_df(comb_OL_mod,ratio=.7,seed=123)[[2]]
+
+
+```
+
+Parameters
+Model
+Evaluation Log
+```{r}
+
+params=list(max_depth = 5,eta = .02, nthread = 6,subsample = 0.5,colsample_bytree = 1,seed=17
+            ,min_child_weight=100,early.stop.rounds=30,objective = "binary:logistic")
+
+dropvars=c("LGD","LGDmean","LGDrandom","random","PD")
+
+bst_OL_new <- xgboost(data = as.matrix(select(trainDUM,-one_of(dropvars))),
+                      label=as.matrix(select(trainDUM,LGDrandom)),
+                      params=params,
+                      eval_metric="auc",nrounds = 1500,verbose=1,nfold=2,maximize=F,print_every_n= 200)
+
+
+save(bst_OL_new, file = "Z:/SAS Data/user/jvontela/Allowance/ML Model/Compliant/OL_COMP_New.rda")
+
+imp=xgb.importance(model=bst_OL_new)
+mat <- xgb.importance (model = bst_OL_new)
+
+mat
+test$pred<-predict(bst_OL_new
+                    ,as.matrix(select(testDUM,-one_of(dropvars)))
+                    ,outputmargin=F
+                    ,ntreelimit=min(bst$best_iteration,bst_OL_new$niter)
+                    ,predcontrib=F)
+
+
+RMSE(test$pred,test$PD)
+auc(test$PD,test$pred)
+```
+
+Data Scoring
+
+```{r}
+
+comb_OL_new <- comb_OL %>%
+               filter(year != 2015) %>%
+               filter(year != 2016) 
+
+comb_OL_newDUM <- data_fun(comb_OL_new)
+comb_OL_new$pred<-predict(bst_OL_new
+                    ,as.matrix(select(comb_OL_newDUM,-one_of(dropvars)))
+                    ,outputmargin=F
+                    ,ntreelimit=min(bst$best_iteration,bst_OL_new$niter)
+                    ,predcontrib=F)
+
+comb_OL_19DUM <- data_fun(comb_OL_19)
+comb_OL_19$pred<-predict(bst_OL_new
+                    ,as.matrix(select(comb_OL_19DUM,-one_of(dropvars)))
+                    ,outputmargin=F
+                    ,ntreelimit=min(bst$best_iteration,bst_OL_new$niter)
+                    ,predcontrib=F)
+
+
+t19<- comb_OL_19 %>%
+      group_by(MONTHENDDT) %>%
+      summarise( Loss = sum(pred*BALANCE)
+                 ,Act_Loss= sum(CURRENT_BALANCE)
+                 ,Snap_sum = sum(BALANCE)
+                 , NUM= n())
+
+
+```
+
